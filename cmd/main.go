@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.org/go-text-rpg/pkg/engine"
+	"github.com/pushpakjha/go-text-rpg/pkg/engine"
 )
 
 func main() {
