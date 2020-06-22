@@ -8,9 +8,19 @@ import (
 
 
 type World struct {
-	Max_X_size int
-	Max_Y_size int
-	WorldMatrix [][]string
+	Max_x_size int
+	Max_y_size int
+	World_matrix [][]Tile
+}
+
+
+type Tile struct {
+	player bool
+	terrain string
+	objects string
+	npcs string
+	monster string
+	treasure string
 }
 
 
@@ -22,11 +32,33 @@ func Generate_world() World {
 
 	max_x_size := random_seed.Intn(20) + 10
 	max_y_size := random_seed.Intn(20) + 10
-	var arrayofarrays [][]string
+	arrayofarrays := make([][]Tile, max_y_size)
+
+	world_matrix := create_terrain(arrayofarrays, max_x_size, max_y_size)
 
 	return World {
-		Max_X_size: max_x_size,
-		Max_Y_size: max_y_size,
-		WorldMatrix: arrayofarrays,
+		Max_x_size: max_x_size,
+		Max_y_size: max_y_size,
+		World_matrix: world_matrix,
 	}
+}
+
+
+func create_terrain(world_matrix [][]Tile, max_x int, max_y int) [][]Tile {
+	fmt.Println("Populating terrain for world")
+
+	for y := 0; y < max_y; y++ {
+		world_matrix[y] = make([]Tile, max_x)
+		for x := 0; x < max_x; x++ {
+			var current_tile Tile
+			if x < max_x/2 {
+				current_tile.terrain = "grass"
+			} else {
+				current_tile.terrain = "dirt"
+			}
+			world_matrix[y][x] = current_tile
+		}
+	}
+
+	return world_matrix
 }
