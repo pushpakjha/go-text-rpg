@@ -7,9 +7,9 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
-WIDTH = 20
-HEIGHT = 20
+WIDTH = HEIGHT = 20
 
+PLAYER_COLOR = (0, 0, 0)
 
 def main(file_path):
     with open(file_path) as json_file:
@@ -22,43 +22,60 @@ def main(file_path):
     window_size = [max_x_size * WIDTH, max_y_size * HEIGHT]
     screen = pygame.display.set_mode(window_size)
     screen.fill(WHITE)
-    pygame.display.set_caption('Map')
+    pygame.display.set_caption('Game map')
     clock = pygame.time.Clock()
     while True:
-        with open(file_path) as json_file:
-            world_data = json.load(json_file)
+        try:
+            with open(file_path) as json_file:
+                world_data = json.load(json_file)
+        except:
+            time.sleep(1)
+            with open(file_path) as json_file:
+                world_data = json.load(json_file)
         world_matrix = world_data['World_matrix']
         update_screen(clock, screen, world_matrix, max_x_size, max_y_size)
-        time.sleep(1)
+        # time.sleep(1)
 
 
 def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
     """Update the screen of the game."""
     for x_position in range(max_x_size):
         for y_position in range(max_y_size):
-            color = get_land_color(world_matrix, x_position, y_position)
+            color, player = get_land_info(world_matrix, x_position, y_position)
             pygame.draw.rect(screen,
                              color,
                              [WIDTH * x_position,
                              HEIGHT * y_position,
                              WIDTH,
                              HEIGHT])
+
+            if player:
+                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
+                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
+                radius = (WIDTH * 0.75)/2
+                pygame.draw.circle(screen,
+                                   PLAYER_COLOR,
+                                   (x_center, y_center),
+                                   radius)
+
     clock.tick(60)
     pygame.display.flip()
 
 
-def get_land_color(world_matrix, x_position, y_position):
-    """Get the RGB color from the world matrix."""
+def get_land_info(world_matrix, x_position, y_position):
+    """Get info about the tile from the world matrix."""
     color = None
     terrain = world_matrix[y_position][x_position]['Terrain']
     if terrain == 'grass':
-        color = (38, 50, 22)
+        color = (175, 255, 76)
     elif terrain == 'dirt':
         color = (155, 118, 83)
     else:
         color = (255, 255, 255)
 
-    return color
+    player = terrain = world_matrix[y_position][x_position]['Player']
+
+    return color, player
 
 
 if __name__ == "__main__":

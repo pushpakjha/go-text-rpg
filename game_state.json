@@ -60,7 +60,7 @@
     "Treasure": ""
    },
    {
-    "Player": false,
+    "Player": true,
     "Terrain": "dirt",
     "Objects": "",
     "Npcs": "",
