@@ -15,12 +15,12 @@ type World struct {
 
 
 type Tile struct {
-	player bool
-	terrain string
-	objects string
-	npcs string
-	monster string
-	treasure string
+	Player bool
+	Terrain string
+	Objects string
+	Npcs string
+	Monster string
+	Treasure string
 }
 
 
@@ -52,9 +52,9 @@ func create_terrain(world_matrix [][]Tile, max_x int, max_y int) [][]Tile {
 		for x := 0; x < max_x; x++ {
 			var current_tile Tile
 			if x < max_x/2 {
-				current_tile.terrain = "grass"
+				current_tile.Terrain = "grass"
 			} else {
-				current_tile.terrain = "dirt"
+				current_tile.Terrain = "dirt"
 			}
 			world_matrix[y][x] = current_tile
 		}

@@ -1,381 +1,2080 @@
 {
- "Max_x_size": 13,
- "Max_y_size": 25,
+ "Max_x_size": 15,
+ "Max_y_size": 17,
  "World_matrix": [
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ],
   [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
-  ],
-  [
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {},
-   {}
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "grass",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   },
+   {
+    "Player": false,
+    "Terrain": "dirt",
+    "Objects": "",
+    "Npcs": "",
+    "Monster": "",
+    "Treasure": ""
+   }
   ]
  ]
 }
