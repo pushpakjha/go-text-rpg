@@ -1,4 +1,4 @@
-"""Show map of current game for debugging purposes."""
+"""Show map of current game for debugging purposes and because I'm too lazy to figure this out in Go."""
 import json
 import pygame
 import time
@@ -10,6 +10,7 @@ RED = (255, 0, 0)
 WIDTH = HEIGHT = 20
 
 PLAYER_COLOR = (0, 0, 0)
+
 
 def main(file_path):
     with open(file_path) as json_file:
@@ -41,7 +42,7 @@ def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
     """Update the screen of the game."""
     for x_position in range(max_x_size):
         for y_position in range(max_y_size):
-            color, player = get_land_info(world_matrix, x_position, y_position)
+            color, player, monster = get_land_info(world_matrix, x_position, y_position)
             pygame.draw.rect(screen,
                              color,
                              [WIDTH * x_position,
@@ -55,6 +56,16 @@ def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
                 radius = (WIDTH * 0.75)/2
                 pygame.draw.circle(screen,
                                    PLAYER_COLOR,
+                                   (x_center, y_center),
+                                   radius)
+
+            if monster['Monster_type']:
+                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
+                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
+                radius = (WIDTH * 0.75)/2
+                monster_level = monster['Attributes']['Level']
+                pygame.draw.circle(screen,
+                                   (monster_level * 75, 0, 0),
                                    (x_center, y_center),
                                    radius)
 
@@ -73,9 +84,10 @@ def get_land_info(world_matrix, x_position, y_position):
     else:
         color = (255, 255, 255)
 
-    player = terrain = world_matrix[y_position][x_position]['Player']
+    player = world_matrix[y_position][x_position]['Player']
+    monster = world_matrix[y_position][x_position]['Monster']
 
-    return color, player
+    return color, player, monster
 
 
 if __name__ == "__main__":

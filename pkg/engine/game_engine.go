@@ -10,7 +10,9 @@ import (
 func Run_game() {
 	// Generate world, player, monsters, NPCs etc.
 	game_world := world.Generate_world()
+	game_world = world.Spawn_monsters(&game_world, 5)
 	game_world = player.Spawn_player(&game_world)
+
 
 	// Infinite game loop
 
