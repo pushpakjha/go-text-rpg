@@ -1,23 +1,22 @@
 package engine
 
 import (
-	"fmt"
 	"encoding/json"
 	"io/ioutil"
 	"github.com/pushpakjha/go-text-rpg/pkg/world"
+	"github.com/pushpakjha/go-text-rpg/pkg/player"
 )
 
 func Run_game() {
-	// Generate world
-	initial_world := world.Generate_world()
-	fmt.Println("Max X size", initial_world.Max_x_size)
-	fmt.Println("Max Y size", initial_world.Max_y_size)
+	// Generate world, player, monsters, NPCs etc.
+	game_world := world.Generate_world()
+	game_world = player.Spawn_player(&game_world)
 
 	// Infinite game loop
 
 
 	// Write current game state to file
-	write_game_file(initial_world)
+	write_game_file(game_world)
 }
 
 

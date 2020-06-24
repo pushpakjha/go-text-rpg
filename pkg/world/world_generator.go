@@ -2,8 +2,8 @@ package world
 
 import (
 	"fmt"
-	"time"
-	"math/rand"
+	// "time"
+	// "math/rand"
 )
 
 
@@ -27,11 +27,13 @@ type Tile struct {
 func Generate_world() World {
 	fmt.Println("Generating world")
 
-	seed := rand.NewSource(time.Now().UnixNano())
-	random_seed := rand.New(seed)
+	// seed := rand.NewSource(time.Now().UnixNano())
+	// random_seed := rand.New(seed)
 
-	max_x_size := random_seed.Intn(20) + 10
-	max_y_size := random_seed.Intn(20) + 10
+	// max_x_size := random_seed.Intn(20) + 10
+	// max_y_size := random_seed.Intn(20) + 10
+	max_x_size := 25
+	max_y_size := 25
 	arrayofarrays := make([][]Tile, max_y_size)
 
 	world_matrix := create_terrain(arrayofarrays, max_x_size, max_y_size)
