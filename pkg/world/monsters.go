@@ -17,7 +17,7 @@ type Monster_attributes struct {
 }
 
 
-type Monster_info struct {
+type Monster struct {
 	Monster_type string
 	Attributes Monster_attributes
 
@@ -36,7 +36,7 @@ func Spawn_monsters(game_world *World, monster_number int) World {
 
 		monster_level := random_seed.Intn(2) + 1
 
-		current_monster := Monster_info{
+		current_monster := Monster{
 			Monster_type: "Wolf",
 			Attributes: Monster_attributes{
 				Level: monster_level,
@@ -46,7 +46,7 @@ func Spawn_monsters(game_world *World, monster_number int) World {
 				Special_abilities: "None",
 			},
 		}
-		game_world.World_matrix[y_position][x_position].Monster = current_monster
+		game_world.World_matrix[y_position][x_position].Monster_info = current_monster
 	}
 
 	return *game_world

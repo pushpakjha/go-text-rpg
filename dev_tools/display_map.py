@@ -10,6 +10,7 @@ RED = (255, 0, 0)
 WIDTH = HEIGHT = 20
 
 PLAYER_COLOR = (0, 0, 0)
+TREASURE_COLOR = (212,175,55)
 
 
 def main(file_path):
@@ -42,7 +43,7 @@ def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
     """Update the screen of the game."""
     for x_position in range(max_x_size):
         for y_position in range(max_y_size):
-            color, player, monster = get_land_info(world_matrix, x_position, y_position)
+            color, player, monster, treasure = get_land_info(world_matrix, x_position, y_position)
             pygame.draw.rect(screen,
                              color,
                              [WIDTH * x_position,
@@ -69,6 +70,15 @@ def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
                                    (x_center, y_center),
                                    radius)
 
+            if treasure['Treasure_text']:
+                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
+                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
+                radius = (WIDTH * 0.75)/2
+                pygame.draw.circle(screen,
+                                   TREASURE_COLOR,
+                                   (x_center, y_center),
+                                   radius)
+
     clock.tick(60)
     pygame.display.flip()
 
@@ -85,9 +95,10 @@ def get_land_info(world_matrix, x_position, y_position):
         color = (255, 255, 255)
 
     player = world_matrix[y_position][x_position]['Player']
-    monster = world_matrix[y_position][x_position]['Monster']
+    monster = world_matrix[y_position][x_position]['Monster_info']
+    treasure = world_matrix[y_position][x_position]['Treasure_info']
 
-    return color, player, monster
+    return color, player, monster, treasure
 
 
 if __name__ == "__main__":

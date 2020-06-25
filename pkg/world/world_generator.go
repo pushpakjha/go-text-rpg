@@ -19,8 +19,8 @@ type Tile struct {
 	Terrain string
 	Objects string
 	Npcs string
-	Monster Monster_info
-	Treasure string
+	Monster_info Monster
+	Treasure_info Treasure
 }
 
 
