@@ -10,17 +10,27 @@ import (
 type World struct {
 	Max_x_size int
 	Max_y_size int
+	Player_info Player
 	World_matrix [][]Tile
 }
 
 
 type Tile struct {
-	Player bool
 	Terrain string
 	Objects string
 	Npcs string
 	Monster_info Monster
 	Treasure_info Treasure
+}
+
+type Player struct {
+	X_position int
+	Y_position int
+	Level int
+	Health int
+	Attack int
+	Defense int
+	Special_abilities string
 }
 
 

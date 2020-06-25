@@ -35,15 +35,16 @@ def main(file_path):
             with open(file_path) as json_file:
                 world_data = json.load(json_file)
         world_matrix = world_data['World_matrix']
-        update_screen(clock, screen, world_matrix, max_x_size, max_y_size)
+        player = world_data['Player_info']
+        update_screen(clock, screen, world_matrix, player, max_x_size, max_y_size)
         # time.sleep(1)
 
 
-def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
+def update_screen(clock, screen, world_matrix, player, max_x_size, max_y_size):
     """Update the screen of the game."""
     for x_position in range(max_x_size):
         for y_position in range(max_y_size):
-            color, player, monster, treasure = get_land_info(world_matrix, x_position, y_position)
+            color, monster, treasure = get_land_info(world_matrix, x_position, y_position)
             pygame.draw.rect(screen,
                              color,
                              [WIDTH * x_position,
@@ -51,14 +52,14 @@ def update_screen(clock, screen, world_matrix, max_x_size, max_y_size):
                              WIDTH,
                              HEIGHT])
 
-            if player:
-                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
-                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
-                radius = (WIDTH * 0.75)/2
-                pygame.draw.circle(screen,
-                                   PLAYER_COLOR,
-                                   (x_center, y_center),
-                                   radius)
+
+            x_center = (player['X_position'] * WIDTH) + (WIDTH * 0.75)/2
+            y_center = (player['Y_position'] * HEIGHT) + (HEIGHT * 0.75)/2
+            radius = (WIDTH * 0.75)/2
+            pygame.draw.circle(screen,
+                                PLAYER_COLOR,
+                                (x_center, y_center),
+                                radius)
 
             if monster['Monster_type']:
                 x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
@@ -94,11 +95,10 @@ def get_land_info(world_matrix, x_position, y_position):
     else:
         color = (255, 255, 255)
 
-    player = world_matrix[y_position][x_position]['Player']
     monster = world_matrix[y_position][x_position]['Monster_info']
     treasure = world_matrix[y_position][x_position]['Treasure_info']
 
-    return color, player, monster, treasure
+    return color, monster, treasure
 
 
 if __name__ == "__main__":

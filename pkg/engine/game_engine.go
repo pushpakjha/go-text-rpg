@@ -19,26 +19,14 @@ func Run_game() {
 	game_world = player.Spawn_player(&game_world)
 
 	display_instructions()
+	write_game_file(game_world)
 
 	// Infinite game loop
 	for {
-
 		reader := bufio.NewReader(os.Stdin)
 		text, _ := reader.ReadString('\n')
 		text = strings.Replace(text, "\n", "", -1)
-
-		if strings.Compare("help", text) == 0 {
-			available_commands := "\nAvailable commands are:\n" +
-			"help - Displays this help text\n" +
-			"move - Use move plus a direction to move your character (up, down, left, right)\n" +
-			"info - List your current player info and stats\n" +
-			"scout - Displays info about where you are and what may be near you\n" +
-			"talk - Use to talk with NPCs, they have may quests or items for sale\n" +
-			"fight - Use to fight a monster you run across\n" +
-			"run - Use to run away from a monster, may not always work\n" +
-			"interact - Used as a general action to interact with the world\n\n"
-			fmt.Println(available_commands)
-		}
+		game_world = player.Evaulate_action(&game_world, text)
 
 		// Write current game state to file
 		write_game_file(game_world)
