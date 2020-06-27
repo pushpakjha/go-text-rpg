@@ -2,8 +2,6 @@ package world
 
 import (
 	"fmt"
-	// "time"
-	// "math/rand"
 )
 
 
@@ -31,6 +29,7 @@ type Player struct {
 	Attack int
 	Defense int
 	Special_abilities string
+	Inventory []Item
 }
 
 
