@@ -37,9 +37,13 @@ func Spawn_player(game_world *world.World) world.World {
 
 func Evaulate_action(game_world *world.World, action string) world.World {
 
-	move_info := strings.Fields(action)
+	action_info := strings.Fields(action)
 	if strings.HasPrefix(action, "move") {
 		action = "move"
+	} else if strings.HasPrefix(action, "equip") {
+		action = "equip"
+	} else if strings.HasPrefix(action, "unequip") {
+		action = "unequip"
 	}
 
 	switch action {
@@ -47,7 +51,7 @@ func Evaulate_action(game_world *world.World, action string) world.World {
 		print_help()
 		break
 	case "move":
-		game_world = move_player(game_world, move_info)
+		game_world = move_player(game_world, action_info)
 		check_collision(game_world)
 		break
 	case "info":
@@ -60,16 +64,16 @@ func Evaulate_action(game_world *world.World, action string) world.World {
 		fmt.Println("Not implemented")
 		break
 	case "fight":
-		fmt.Println("Not implemented")
+		game_world = fight_monster(game_world)
 		break
 	case "run":
 		fmt.Println("Not implemented")
 		break
 	case "equip":
-		fmt.Println("Not implemented")
+		game_world = equip_item(game_world, action_info)
 		break
 	case "unequip":
-		fmt.Println("Not implemented")
+		game_world = unequip_item(game_world, action_info)
 		break
 	case "interact":
 		game_world = interact_with_world(game_world)
@@ -145,13 +149,13 @@ func print_help() {
 		"\nAvailable commands are:\n" +
 		"help - Displays this help text\n" +
 		"move - Use to move your character, provide a direction (up, down, left, right)" +
-				" plus the number of tiles to move (as an int), defaults to 1\n" +
+				" plus the number of tiles to move (as an integer), defaults to 1\n" +
 		"info - List your current player info and stats\n" +
 		"scout - Displays info about where you are and what may be near you\n" +
 		"talk - Use to talk with NPCs, they have may quests or items for sale\n" +
 		"fight - Use to fight a monster you run across\n" +
 		"run - Use to run away from a monster, may not always work\n" +
-		"equip - Use to equip an item in your inventory\n" +
+		"equip - Use to equip an item in your inventory, type equip then the item name\n" +
 		"unequip - Use to unequip an item\n" +
 		"interact - Use as a general action to interact with the world\n\n"
 	fmt.Println(available_commands)
@@ -186,6 +190,7 @@ func display_player_info(game_world *world.World) {
 	if len(game_world.Player_info.Inventory) > 0 {
 		for x := 0; x < len(game_world.Player_info.Inventory); x++ {
 			fmt.Printf("%s:\n", game_world.Player_info.Inventory[x].Item_name)
+			fmt.Println("Equipped -", game_world.Player_info.Inventory[x].Equipped)
 			fmt.Println("Item type -", game_world.Player_info.Inventory[x].Attributes.Item_type)
 			fmt.Println("Attack -", game_world.Player_info.Inventory[x].Attributes.Attack)
 			fmt.Println("Defense -", game_world.Player_info.Inventory[x].Attributes.Defense)
@@ -208,10 +213,57 @@ func interact_with_world(game_world *world.World) *world.World {
 		item := game_world.World_matrix[player_y_pos][player_x_pos].Treasure_info.Treasure_item
 		game_world.Player_info.Inventory = append(game_world.Player_info.Inventory, item)
 		game_world.World_matrix[player_y_pos][player_x_pos].Treasure_info = world.Treasure{}
-		// Spawn new treasure to replace the one we picked up
-		world.Spawn_treasure(game_world, 1)
 	} else {
 		fmt.Println("\nNothing to interact with")
 	}
 	return game_world
 }
+
+
+func equip_item(game_world *world.World, equip_info []string) *world.World {
+	var item_to_equip string
+	if len(equip_info) > 1 {
+		item_to_equip = strings.Join(equip_info[1:], " ")
+	}
+
+	inventory_length := len(game_world.Player_info.Inventory)
+	for x := 0;x < inventory_length; x++ {
+		if strings.ToLower(game_world.Player_info.Inventory[x].Item_name) ==
+		   strings.ToLower(item_to_equip) {
+			game_world.Player_info.Inventory[x].Equipped = true
+			fmt.Println("\nYou equipped the", game_world.Player_info.Inventory[x].Item_name)
+		}
+	}
+	return game_world
+}
+
+
+func unequip_item(game_world *world.World, unequip_info []string) *world.World {
+	var item_to_unequip string
+	if len(unequip_info) > 1 {
+		item_to_unequip = strings.Join(unequip_info[1:], " ")
+	}
+
+	inventory_length := len(game_world.Player_info.Inventory)
+	for x := 0;x < inventory_length; x++ {
+		if strings.ToLower(game_world.Player_info.Inventory[x].Item_name) ==
+		   strings.ToLower(item_to_unequip) {
+			game_world.Player_info.Inventory[x].Equipped = false
+			fmt.Println("\nYou unequipped the", game_world.Player_info.Inventory[x].Item_name)
+		}
+	}
+	return game_world
+}
+
+
+func fight_monster(game_world *world.World) *world.World {
+	if check_collision(game_world) == "monster" {
+		game_world = enter_fight_mode(game_world)
+	} else {
+		fmt.Println("No monster here to fight")
+	}
+
+	return game_world
+}
+
+

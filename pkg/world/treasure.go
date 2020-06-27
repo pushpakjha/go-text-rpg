@@ -19,6 +19,7 @@ type Item_attributes struct {
 type Item struct {
 	Item_name string
 	Attributes Item_attributes
+	Equipped bool
 }
 
 
@@ -42,6 +43,7 @@ func Spawn_treasure(game_world *World, treasure_number int) World {
 			Treasure_text: "A chest with a small weapons cache!",
 			Treasure_item: Item{
 				Item_name: "Bronze short sword",
+				Equipped: false,
 				Attributes: Item_attributes{
 					Item_type: "Sword",
 					Attack: 5,
