@@ -2,6 +2,11 @@ package world
 
 import (
 	"fmt"
+	"os"
+	"strings"
+	"time"
+	"encoding/json"
+	"io/ioutil"
 )
 
 
@@ -72,4 +77,22 @@ func create_terrain(world_matrix [][]Tile, max_x int, max_y int) [][]Tile {
 	}
 
 	return world_matrix
+}
+
+func Save_world(world_matrix *World) {
+
+	currentTime := time.Now()
+	save_file_name := "game_state_" + currentTime.Format("2006.01.02 15:04:05") + ".json"
+	save_file_name = strings.Replace(save_file_name, " ", "_", -1)
+	save_file_name = strings.Replace(save_file_name, ":", ".", -1)
+
+	Write_game_file(world_matrix, save_file_name)
+	fmt.Println("Game saved to", save_file_name)
+	os.Exit(0)
+}
+
+
+func Write_game_file(world_matrix *World, file_name string) {
+	file, _ := json.MarshalIndent(world_matrix, "", " ")
+	_ = ioutil.WriteFile(file_name, file, 0644)
 }

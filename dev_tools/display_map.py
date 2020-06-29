@@ -1,4 +1,4 @@
-"""Show map of current game for debugging purposes and because I'm too lazy to figure this out in Go."""
+"""Show map of current game for debugging purposes because I'm too lazy to figure this out in Go."""
 import json
 import pygame
 import time

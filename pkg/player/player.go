@@ -78,6 +78,12 @@ func Evaulate_action(game_world *world.World, action string) world.World {
 	case "interact":
 		game_world = interact_with_world(game_world)
 		break
+	case "save":
+		world.Save_world(game_world)
+		break
+	case "load":
+		fmt.Println("Not implemented")
+		break
 	}
 
 	return *game_world
@@ -157,7 +163,9 @@ func print_help() {
 		"run - Use to run away from a monster, may not always work\n" +
 		"equip - Use to equip an item in your inventory, type equip then the item name\n" +
 		"unequip - Use to unequip an item\n" +
-		"interact - Use as a general action to interact with the world\n\n"
+		"interact - Use as a general action to interact with the world\n" +
+		"save - Use to save the current game with a timestamped file\n" +
+		"load - Use to load a saved game\n\n"
 	fmt.Println(available_commands)
 }
 

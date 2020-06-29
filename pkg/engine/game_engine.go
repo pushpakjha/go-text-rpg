@@ -5,8 +5,6 @@ import (
 	"bufio"
 	"strings"
 	"os"
-	"encoding/json"
-	"io/ioutil"
 	"github.com/pushpakjha/go-text-rpg/pkg/world"
 	"github.com/pushpakjha/go-text-rpg/pkg/player"
 )
@@ -19,7 +17,7 @@ func Run_game() {
 	game_world = player.Spawn_player(&game_world)
 
 	display_instructions()
-	write_game_file(game_world)
+	world.Write_game_file(&game_world, "game_state.json")
 
 	// Infinite game loop
 	for {
@@ -29,16 +27,8 @@ func Run_game() {
 		game_world = player.Evaulate_action(&game_world, text)
 
 		// Write current game state to file
-		write_game_file(game_world)
-
+		world.Write_game_file(&game_world, "game_state.json")
 	}
-
-}
-
-
-func write_game_file(world_matrix world.World) {
-	file, _ := json.MarshalIndent(world_matrix, "", " ")
-	_ = ioutil.WriteFile("game_state.json", file, 0644)
 }
 
 
