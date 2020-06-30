@@ -168,7 +168,7 @@ func print_help() {
 		"unequip - Use to unequip an item\n" +
 		"interact - Use as a general action to interact with the world\n" +
 		"save - Use to save the current game with a timestamped file\n" +
-		"load - Use to load a saved game, use the number to select the file to load\n" +
+		"load - Use to load a saved game\n" +
 		"quit - Quit the game, make sure you save first\n\n"
 	fmt.Println(available_commands)
 }

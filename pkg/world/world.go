@@ -102,31 +102,44 @@ func Write_game_file(world_matrix *World, file_name string) {
 
 
 func Load_world() World {
+	var file_name string
 	file_name_map := make(map[string]string)
 
 	file_number := 1
 	files, _ := ioutil.ReadDir("./")
 	for _, f := range files {
 		if strings.HasSuffix(f.Name(), ".json") {
-			fmt.Printf("%d) %s\n", file_number, f.Name())
+			if f.Name() == "game_state.json" {
+				file_name = "Return to current game"
+			} else {
+				file_name = f.Name()
+			}
+			fmt.Printf("%d) %s\n", file_number, file_name)
 			file_ind := strconv.Itoa(file_number) 
-			file_name_map[file_ind] = f.Name()
+			file_name_map[file_ind] = file_name
 			file_number += 1
 		}
 	}
 
 	for {
-		fmt.Println("Pick a number to load that game save file, the current game is game_state.json")
+		fmt.Println("Pick a number to load that game save file, use 1 to return to current game")
 		reader := bufio.NewReader(os.Stdin)
 		text, _ := reader.ReadString('\n')
 		text = strings.Replace(text, "\n", "", -1)
+		game_world := World{}
 		if val, ok := file_name_map[text]; ok {
-			fmt.Println("Loading:", val)
-			file, _ := ioutil.ReadFile(val)
-			game_world := World{}
-			_ = json.Unmarshal([]byte(file), &game_world)
-			fmt.Println("Finished loading, returning to game")
-			return game_world
+			if val == "Return to current game" {
+				file, _ := ioutil.ReadFile("game_state.json")
+				_ = json.Unmarshal([]byte(file), &game_world)
+				fmt.Println("Returning to current game")
+				return game_world
+			} else {
+				fmt.Println("Loading:", val)
+				file, _ := ioutil.ReadFile(val)
+				_ = json.Unmarshal([]byte(file), &game_world)
+				fmt.Println("Finished loading, returning to game")
+				return game_world
+			}
 		} else {
 			fmt.Println("Invalid option, pick a number to load that game save file")
 		}

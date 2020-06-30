@@ -16,8 +16,10 @@ func Run_game() {
 	game_world = world.Spawn_treasure(&game_world, 3)
 	game_world = player.Spawn_player(&game_world)
 
+	game_file := "game_state.json"
+
 	display_instructions()
-	world.Write_game_file(&game_world, "game_state.json")
+	world.Write_game_file(&game_world, game_file)
 
 	// Infinite game loop
 	for {
@@ -27,7 +29,7 @@ func Run_game() {
 		game_world = player.Evaulate_action(&game_world, text)
 
 		// Write current game state to file
-		world.Write_game_file(&game_world, "game_state.json")
+		world.Write_game_file(&game_world, game_file)
 	}
 }
 
