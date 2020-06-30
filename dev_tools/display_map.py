@@ -53,18 +53,18 @@ def update_screen(clock, screen, world_matrix, player, max_x_size, max_y_size):
                              HEIGHT])
 
 
-            x_center = (player['X_position'] * WIDTH) + (WIDTH * 0.75)/2
-            y_center = (player['Y_position'] * HEIGHT) + (HEIGHT * 0.75)/2
-            radius = (WIDTH * 0.75)/2
+            x_center = int((player['X_position'] * WIDTH) + (WIDTH * 0.75)/2)
+            y_center = int((player['Y_position'] * HEIGHT) + (HEIGHT * 0.75)/2)
+            radius = int((WIDTH * 0.75)/2)
             pygame.draw.circle(screen,
                                 PLAYER_COLOR,
                                 (x_center, y_center),
                                 radius)
 
             if monster['Monster_type']:
-                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
-                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
-                radius = (WIDTH * 0.75)/2
+                x_center = int((x_position * WIDTH) + (WIDTH * 0.75)/2)
+                y_center = int((y_position * HEIGHT) + (HEIGHT * 0.75)/2)
+                radius = int((WIDTH * 0.75)/2)
                 monster_level = monster['Attributes']['Level']
                 pygame.draw.circle(screen,
                                    (monster_level * 75, 0, 0),
@@ -72,9 +72,9 @@ def update_screen(clock, screen, world_matrix, player, max_x_size, max_y_size):
                                    radius)
 
             if treasure['Treasure_text']:
-                x_center = (x_position * WIDTH) + (WIDTH * 0.75)/2
-                y_center = (y_position * HEIGHT) + (HEIGHT * 0.75)/2
-                radius = (WIDTH * 0.75)/2
+                x_center = int((x_position * WIDTH) + (WIDTH * 0.75)/2)
+                y_center = int((y_position * HEIGHT) + (HEIGHT * 0.75)/2)
+                radius = int((WIDTH * 0.75)/2)
                 pygame.draw.circle(screen,
                                    TREASURE_COLOR,
                                    (x_center, y_center),

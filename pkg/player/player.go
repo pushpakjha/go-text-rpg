@@ -82,8 +82,11 @@ func Evaulate_action(game_world *world.World, action string) world.World {
 		world.Save_world(game_world)
 		break
 	case "load":
-		fmt.Println("Not implemented")
+		world.Load_world()
 		break
+	case "quit":
+		world.Quit_game()
+		break	
 	}
 
 	return *game_world
@@ -165,7 +168,8 @@ func print_help() {
 		"unequip - Use to unequip an item\n" +
 		"interact - Use as a general action to interact with the world\n" +
 		"save - Use to save the current game with a timestamped file\n" +
-		"load - Use to load a saved game\n\n"
+		"load - Use to load a saved game, use the number to select the file to load\n" +
+		"quit - Quit the game, make sure you save first\n\n"
 	fmt.Println(available_commands)
 }
 
